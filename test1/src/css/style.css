@@ -232,6 +232,24 @@ template {
   display: none;
 }
 
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @font-face {
   font-family: 'Verdana';
   src: url("../fonts/Verdana.svg#Verdana") format("svg"), url("../fonts/Verdana.ttf") format("truetype"), url("../fonts/Verdana.eot") format("eot"), url("../fonts/Verdana.woff") format("woff"), url("../fonts/Verdana.woff2") format("woff2");
@@ -259,7 +277,8 @@ img {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
+  width: 96%;
   margin: auto;
 }
 
@@ -287,25 +306,53 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
+  max-width: 990px;
+  padding: 14px;
   border: 2px solid #f0f0f0;
 }
 
 .tab-link {
   margin-right: 20px;
-  -ms-flex-preferred-size: 53%;
-      flex-basis: 53%;
 }
 
 .tab-link__button {
   border: none;
   margin-bottom: 10px;
-  width: 100%;
+  width: 385px;
   height: 96px;
 }
 
+.tab-link__button.active {
+  background: #cccccc;
+}
+
+.tab-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 10px;
+}
+
+.tab-item {
+  -webkit-animation: fadeEffect 2s;
+          animation: fadeEffect 2s;
+}
+
+.tab-items {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
 .tab-item__image {
-  max-width: 565px;
-  max-height: 350px;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.tab-item__p {
+  margin-top: 3px;
 }
 /*# sourceMappingURL=style.css.map */

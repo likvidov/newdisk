@@ -8,7 +8,8 @@ body
 img
     max-width: 100%
 .container
-    width: 1170px
+    max-width: 1170px
+    width: 96%
     margin: auto
 .title
     display: flex
@@ -24,18 +25,29 @@ img
 .tab
     display: flex
     justify-content: space-between
-    padding: 10px
+    max-width: 990px
+    padding: 14px
     border: 2px solid $tab-off
     &-link
         margin-right: 20px
-        flex-basis: 53%
         &__button
             border: none
             margin-bottom: 10px
-            width: 100%
+            width: 385px
             height: 96px
+            &.active
+                background: $tab-on
+        &s
+            display: flex
+            flex-direction: column
+            margin-right: 10px
+
     &-item
-        
+        animation: fadeEffect 2s;
+        &s
+            flex-basis: 70%
         &__image
-            max-width: 565px
-            max-height: 350px
+           max-width: 100%
+           min-height: 100%
+        &__p
+            margin-top: 3px;
