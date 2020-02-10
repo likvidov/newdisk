@@ -1,8 +1,10 @@
 @font-face {
     font-family: 'Verdana';
-    src: url('Verdana.svg#Verdana') format('svg'),
-            url('Verdana.ttf') format('truetype'),
-            url('Verdana.woff') format('woff');
+    src: url('../fonts/Verdana.svg#Verdana') format('svg'),
+         url('../fonts/Verdana.ttf') format('truetype'),
+         url('../fonts/Verdana.eot') format('eot'),
+         url('../fonts/Verdana.woff') format('woff'),
+         url('../fonts/Verdana.woff2') format('woff2');
     font-display: swap;
     font-weight: normal;
     font-style: normal;
