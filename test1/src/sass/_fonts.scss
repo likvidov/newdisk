@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Verdana';
+    src: url('Verdana.svg#Verdana') format('svg'),
+            url('Verdana.ttf') format('truetype'),
+            url('Verdana.woff') format('woff');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@mixin reg {
+    font-family: 'Verdana';
+    font-weight: normal;
+    font-style: normal;
+}
