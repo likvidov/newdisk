@@ -1,0 +1,112 @@
+*
+    box-sizing: border-box
+body
+    +reg
+    font-size: 22px
+    line-height: 21px
+    color: $text-color
+img
+    max-width: 100%
+.container
+    width: 95%
+    margin: auto
+.title
+    display: flex
+    font-size: 32px
+    line-height: 1
+    font-weight: bold;
+    text-transform: uppercase
+    color: $tab-on
+    margin-left: -15px
+.subtitle
+    text-align: justify
+    margin-bottom: 0
+.hint
+    color: $hint
+    margin-bottom: 24px
+    display: block
+
+.tab
+    &-item
+        display: flex
+        flex-direction: column
+        font-size: 12px
+        flex-basis: 14%
+        border: 1px solid $tab-off
+        align-self: flex-start
+        align-items: stretch
+        flex-wrap: wrap
+        &s
+            display: flex
+            justify-content: space-between
+            align-content: flex-start
+        &__title
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: normal
+            text-align: center
+            height: 85px
+            background: $tab-off
+            color: $tab-text
+            width: 100%
+            margin: auto
+            margin-bottom: 55px
+            font-size: 18px
+            line-height: 1
+        &__image
+            margin-bottom: 25px
+            max-width: 168px
+            max-height: 142px
+        &__text
+            visibility: hidden
+            align-self: stretch
+            height: 84px
+            margin-left: 5px
+            margin-right: 5px
+        &__switch
+            position: relative
+            display: inline-block
+            margin: auto
+            margin-bottom: 10px;
+            width: 60px
+            height: 34px
+            .checkbox
+                opacity: 0
+                width: 0
+                height: 0
+.slider 
+    position: absolute
+    cursor: pointer
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #ccc
+    -webkit-transition: .4s
+    transition: .4s
+    &:before
+        position: absolute
+        content: ""
+        height: 26px
+        width: 26px
+        left: 4px
+        bottom: 4px
+        background-color: $btn-color
+        -webkit-transition: .4s
+        transition: .4s
+    .checkbox:checked + &
+        background-color: $tab-on
+    .checkbox:focus + &
+        box-shadow: 0 0 1px $tab-on
+    .checkbox:checked + &:before
+        transform: translateX(26px)
+                
+
+.round
+    border-radius: 34px
+.round:before 
+    border-radius: 50%
+
+.active
+    background: $tab-on 

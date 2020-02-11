@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание для "Новый диск"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="title">Критические значения параметров метеорологических явлений</h1>
+            <p class="subtitle">Сами по себе атмосферные осадки и изменения температур не несут опасности, значение имеет то, насколько они могут усилиться. Когда мелкий дождь становится затяжным или превращается в сильный дождь (ливень), возникает опасность подтопления. Усиление, поначалу легкого ветерка до шквалистого ветра повышает вероятность обрыва проводов. То же относится и к другим метеорологическим явлениям. С помощью переключателя «усильте» то или иное явление природы и посмотрите, при каких критических параметрах оно становятся опасным.</p>
+            <span class="hint">*Сдвиньте переключатель под иконкой, чтобы увидеть критические параметры.</span>
+
+            <div class="tab-items">
+                <div class="tab-item">
+                    <h2 class="tab-item__title">Ветер</h2>
+                    
+                    <img src="img/1_off.png" alt="" class="tab-item__image">
+
+                    <p class="tab-item__text">Скорость порывов от 25м/c и более.</p>
+
+                    <label class="tab-item__switch" >
+                        <input class="checkbox" type="checkbox">
+                        <span class="slider round" onclick="switchBtn(0)"></span>
+                    </label>
+                </div>
+
+                <div class="tab-item">
+                    <h2 class="tab-item__title">Дождь</h2>
+                    
+                    <img src="img/2_off.png" alt="" class="tab-item__image">
+
+                    <p class="tab-item__text">Кол-во осадков 100 мм и более, в период менее чем за 12 часов.</p>
+
+                    <label class="tab-item__switch" >
+                        <input class="checkbox" type="checkbox">
+                        <span class="slider round" onclick="switchBtn(1)"></span>
+                    </label>
+                </div>
+
+                <div class="tab-item">
+                    <h2 class="tab-item__title">Снег</h2>
+                    
+                    <img src="img/3_off.png" alt="" class="tab-item__image">
+
+                    <p class="tab-item__text">Кол-во осадков 20 мм и более, в период менее чем за 12 часов.</p>
+
+                    <label class="tab-item__switch" >
+                        <input class="checkbox" type="checkbox">
+                        <span class="slider round" onclick="switchBtn(2)"></span>
+                    </label>
+                </div>
+
+                <div class="tab-item">
+                    <h2 class="tab-item__title">Метель</h2>
+                    
+                    <img src="img/4_off.png" alt="" class="tab-item__image">
+
+                    <p class="tab-item__text">При ветре 20 м/c в течение суток с выпадением снега.</p>
+
+                    <label class="tab-item__switch" >
+                        <input class="checkbox" type="checkbox">
+                        <span class="slider round" onclick="switchBtn(3)"></span>
+                    </label>
+                </div>
+
+                <div class="tab-item">
+                    <h2 class="tab-item__title">Град</h2>
+                    
+                    <img src="img/5_off.png" alt="" class="tab-item__image">
+
+                    <p class="tab-item__text">Диаметр градин 20 мм и более.</p>
+
+                    <label class="tab-item__switch" >
+                        <input class="checkbox" type="checkbox">
+                        <span class="slider round" onclick="switchBtn(4)"></span>
+                    </label>
+                </div>
+
+                <div class="tab-item">
+                    <h2 class="tab-item__title">Гололед</h2>
+                    
+                    <img src="img/6_off.png" alt="" class="tab-item__image">
+
+                    <p class="tab-item__text">Диаметр отложений на проводах 20 мм и более.</p>
+
+                    <label class="tab-item__switch" >
+                        <input class="checkbox" type="checkbox">
+                        <span class="slider round" onclick="switchBtn(5)"></span>
+                    </label>
+                </div>
+
+                <div class="tab-item">
+                    <h2 class="tab-item__title">Мороз</h2>
+                    
+                    <img src="img/7_off.png" alt="" class="tab-item__image">
+
+                    <p class="tab-item__text">Температура воздуха у поверхности земли - 30°C и ниже для Европейской части РФ. </p>
+
+                    <label class="tab-item__switch" >
+                        <input class="checkbox" type="checkbox">
+                        <span class="slider round" onclick="switchBtn(6)"></span>
+                    </label>
+                </div>
+            </div>    
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

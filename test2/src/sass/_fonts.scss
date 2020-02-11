@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'arial';
+    src: url('../fonts/arial.eot');
+    src: url('../fonts/arial.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/arial.woff2') format('woff2'),
+         url('../fonts/arial.svg#arial') format('svg'),
+         url('../fonts/arial.ttf') format('truetype'),
+         url('../fonts/arial.woff') format('woff');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@mixin reg {
+    font-family: 'arial';
+    font-weight: normal;
+    font-style: normal;
+}
+  
