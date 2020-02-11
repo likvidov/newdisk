@@ -324,6 +324,7 @@ img {
           align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .tab-items {
@@ -335,6 +336,8 @@ img {
           justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .tab-item__title {
@@ -363,6 +366,7 @@ img {
   margin-bottom: 25px;
   max-width: 168px;
   max-height: 142px;
+  margin: auto;
 }
 
 .tab-item__text {
